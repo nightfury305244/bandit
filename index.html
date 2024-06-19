@@ -86,7 +86,10 @@
     }
 
     .background {
-      background-image: radial-gradient(circle at center, #007bbf 30%, #0c0e84 80%, #530b8f 100%) !important;
+      background-image: url("background.png");
+      /*background-image: radial-gradient(circle at center, #007bbf 30%, #0c0e84 80%, #530b8f 100%) !important;*/
+      background-repeat: no-repeat;
+      background-size: cover;
       display: block;
       width: 100vw;
       height: 100vh;
@@ -226,7 +229,8 @@
     }
 
     .gradient-custom {
-      background: linear-gradient(to bottom, #ff31b6 40%, #9200ee);
+      /*background: linear-gradient(to bottom, #ff31b6 40%, #9200ee);*/
+      background: linear-gradient(to bottom, #7b6546 40%, #4c4c4c);
       /* Gradient from pink to purple */
       border-radius: 40px;
       border-top: 2px solid rgba(255, 255, 255, 0.9);
@@ -301,7 +305,7 @@
     .sunglasses-image {
 
       position: absolute;
-      bottom: -10px;
+      bottom: 270px;
       /* Align at the bottom */
     }
 
@@ -799,7 +803,7 @@
       }
 
       to {
-        transform: translateX(-50%) translateY(0);
+        transform: translateX(-47%) translateY(-116px);
         /* End at the final position */
         opacity: 1;
         /* End visible */
@@ -947,6 +951,10 @@
       display: none;
     }
 
+    .m3d-image {
+      border-radius: 50%;
+    }
+
 
     #m3d-image-shadow {
       position: absolute;
@@ -1007,7 +1015,7 @@
       right: 0;
       bottom: 0;
       z-index: -1;
-      background: linear-gradient(to bottom, transparent, #ff31b6 80%);
+      background: linear-gradient(to bottom, transparent, #4c4c4c 80%);
       background-repeat: no-repeat;
       background-size: cover;
     }
@@ -1020,7 +1028,7 @@
       right: 0;
       bottom: 0;
       z-index: -1;
-      background: linear-gradient(to bottom, #ff31b6 30%, transparent);
+      background: linear-gradient(to bottom, #4c4c4c 30%, transparent);
       background-repeat: no-repeat;
       background-size: cover;
     }
@@ -1117,17 +1125,17 @@
     }
 
     .tokenbox img {
-      max-width: 120px;
       left: 0;
       right: 0;
       margin-left: auto;
       margin-right: auto;
       transition: all .6s;
       -webkit-transition: all .6s;
+      border-radius: 15px;
     }
 
-    .tokenbox:hover img {
-      transform: perspective(1000px) rotate(360deg);
+    .tokenbox h3{
+      text-align: center;
     }
 
     .typewriter {
@@ -1374,11 +1382,10 @@
       border-radius: 20px;
       position: relative;
       z-index: 0;
-      background: url('catcutout.png') !important;
-      background-size: 80% !important;
+      background: url('banner 2.png') !important;
+      background-size: 120% !important;
       background-repeat: no-repeat !important;
-      transform: rotate(3deg);
-      background-position: 50% 0% !important;
+      background-position: center 0% !important;
       box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1), inset 0px -3px 0 rgba(255, 255, 255, 0.2);
       transition: all .6s;
       -webkit-transition: all .6s;
@@ -1386,7 +1393,7 @@
 
     .welcome:hover {
       transform: rotate(0deg);
-      background-size: 47% !important;
+      background-size: 120% !important;
       background-position: center bottom !important;
       border-top: 3px solid var(--yellow);
     }
@@ -1425,7 +1432,7 @@
         border-radius: 20px;
         position: relative;
         z-index: 0;
-        background: url('catcutout.png') !important;
+        background: url('banner 2.png') !important;
         background-size: 140% !important;
         background-repeat: no-repeat !important;
         transform: rotate(3deg);
@@ -1777,7 +1784,6 @@
     </div>
     <div id="typewriter" class="typewriter"></div>
     <div class="image-container">
-      <img src="rocket.png" alt="Rocket" class="rocket-image"> <!-- Rocket image -->
 
       <img src="logo2.png" alt="daKat" class="header-image"> <!-- Header image -->
       <img src="sunglasses.png" alt="daKat" class="sunglasses-image">
@@ -1813,7 +1819,7 @@
         <div class="col-lg-4 mb-3">
           <div class="card h-100 gradient-custom toright ">
             <div class="imgbox">
-              <img src="logo2.png" class="card-img-top" alt="...">
+              <img src="i-1.png" class="card-img-top" alt="...">
             </div>
             <div class="card-body">
               <h5 class="card-title">About <span class=yellowtext>daCat</span></h5>
@@ -1827,7 +1833,7 @@
         <div class="col-lg-4 mb-3">
           <div class="card h-1000 center gradient-custom">
             <div class="imgbox">
-              <img src="coinbig.png" class="card-img-top" alt="...">
+              <img src="i-2.png" class="card-img-top" alt="...">
             </div>
             <div class="card-body">
               <h5 class="card-title"><span class=yellowtext>daCat</span> Token</h5>
@@ -1841,7 +1847,7 @@
         <div class="col-lg-4 mb-3">
           <div class="card h-1000 gradient-custom toleft">
             <div class="imgbox">
-              <img src="caticon.png " class="card-img-top" alt="...">
+              <img src="i-3.png " class="card-img-top" alt="...">
             </div>
             <div class="card-body">
               <h5 class="card-title">Join the Community</h5>
@@ -1888,10 +1894,6 @@
             daCat Token was no ordinary crypto token. It was a digital currency imbued with the essence of community.
             Each token bore the image of daCat, striking a pose with his signature funky flair.
             <br /><br />
-            As daCat Token began to circulate, it brought a new wave of fun and funkiness to the world of
-            cryptocurrency. It wasn't just a token; it was a reminder that in the world of digital currencies, there's
-            always room for a little laughter and a lot of funk. And at the center of it all was daCat, the funky and
-            funny feline, pawing his way into the hearts of crypto enthusiasts everywhere.
           </p>
 
         </div>
@@ -1931,7 +1933,7 @@
         </div>
 
         <div class="col-md-4" style="padding:40px;  height: 100%; padding-top: 12%">
-          <img src="coinbig.png" class="img img-fluid 3d-image" id="3d-image">
+          <img src="i-1.png" class="img img-fluid m3d-image" id="3d-image">
           <div id="3d-image-shadow"></div>
         </div>
         <div class="col-md-4">
@@ -1969,41 +1971,34 @@
       <!-- Repeat for as many paws as you need -->
     </div>
     <div class="container">
-      <h2 class="section-title blue"><span class="yellowtext">Cat</span>enomics</h2>
+      <h2 class="section-title blue">Tokenomics</h2>
       <div class="row">
         <div class="col-md-8">
           <div class="row">
             <div class="col-md-6">
               <div class="tokenbox tokenbox1">
-                <center><img src="tokens.png" class="img img-fluid"></center>
+                <center><img src="1.png" class="img img-fluid"></center>
                 <h3 class="font-weight-bold mb-3">Total Supply</h3>
-                <p>420,690,000,000,000 $daCat coins. Not enough? Then make it yourself you dumbass</p> <br />
               </div>
             </div>
             <div class="col-md-6">
               <div class="tokenbox tokenbox2">
-                <center><img src="coindistribution.png" class="img img-fluid"></center>
+                <center><img src="2.png" class="img img-fluid"></center>
                 <h3 class="font-weight-bold mb-3">Coin Distribution</h3>
-                <ul>
-                  <li>8.31% - held in multisig for CEX listing (ah yes the CEX... I do it everyday and anywhere)</li>
-                  <li>91.69% - supply liquidity burned </li>
-                </ul>
               </div>
             </div>
           </div>
           <div class="row">
             <div class="col-md-6">
               <div class="tokenbox tokenbox4">
-                <center> <img src="transactionfee.png" class="img img-fluid"></center>
+                <center> <img src="3.png" class="img img-fluid"></center>
                 <h3 class="font-weight-bold mb-3">Transaction Fee</h3>
-                <p>No taxes. It's all about the funk.</p>
               </div>
             </div>
             <div class="col-md-6">
               <div class="tokenbox tokenbox3">
-                <center><img src="security.png" class="img img-fluid"></center>
+                <center><img src="4.png" class="img img-fluid"></center>
                 <h3 class="font-weight-bold mb-3">Audit and Security</h3>
-                <p>Contract renounced, let's keep it funky and secure.</p>
               </div>
             </div>
           </div>
@@ -2064,7 +2059,7 @@
           <div class="floating-element floating-element-4" data-depth="0.3"><img src=paw.png border=0></div>
           <div class="floating-element floating-element-7" data-depth="0.5"><img src=coin3.png border=0></div>
           <!-- Repeat for each floating element, up to .floating-element-10 -->
-          <img src="kingdacat.png" class=kingimage
+          <img src="logo2.png" class=kingimage
             style="position: relative; bottom: 0; max-width: 100vh; left: 0; right: 0; margin-left: auto; margin-right: auto;">
 
 
@@ -2072,7 +2067,6 @@
 
       </div>
     </div>
-    <img src="dakatmachine.png" class=buymachine id="buyMachineImage" style="">
 
   </section>
   <footer class="footer-custom" style="padding-top: 60px; position:relative;">
